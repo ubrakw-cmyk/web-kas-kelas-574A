@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kas Kelas</title>
+<meta name="description" content="Aplikasi kas kelas: catatan pembayaran mingguan, saldo, dan laporan yang transparan.">
+<meta name="theme-color" content="#16a06a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Pembuka -->
+<div id="intro" role="dialog" aria-label="Pembuka">
+  <div class="intro-in">
+    <img class="intro-ico" src="img/icon-192.png" alt="" width="84" height="84">
+    <h1 class="chalk">Kas Kelas</h1>
+    <p class="chalk sub" id="introKelas">Catatan kas yang rapi &amp; transparan</p>
+    <button class="btn glass intro-btn" id="introGo" type="button">Mulai</button>
+  </div>
+</div>
+
+<div class="bg-menu" id="bgMenu" aria-hidden="true"></div>
+
+<div class="app">
+  <aside class="side glass" id="side"></aside>
+  <main id="view" tabindex="-1"></main>
+</div>
+<nav class="bottom glass" id="bottom" aria-label="Navigasi utama"></nav>
+
+<div id="sheet" class="sheet-wrap" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="app.js" defer></script>
+</body>
+</html>
